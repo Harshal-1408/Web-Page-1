@@ -1,0 +1,672 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
+
+@font-face {
+    font-family: "gambetta", serif;
+    src: url(./fonts/Fonts/OTF/Gambetta-Regular.otf);
+}
+
+:root {
+    --font-inter: "Inter", serif;
+    --font-anton: "Anton SC", serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: white;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px 20px 60px;
+}
+
+.nav-logo {
+    width: 50%;
+
+}
+
+.nav-links-wrapper {
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    font-family: var(--font-inter);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 0 0 0 60px;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 32px;
+
+
+}
+
+.nav-links-wrapper a {
+    color: #0e1011;
+}
+
+.menu {
+    display: none;
+}
+
+.hero {
+    display: flex;
+}
+
+.hero-image {
+    height: 200vh;
+    width: 50%;
+}
+
+.hero-image img {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    /* height: 100%; */
+}
+
+.hero-text {
+    height: 200vh;
+    width: 50%;
+    padding: 30px 60px 30px 60px;
+
+}
+
+.hero-text-content-1 {
+    height: 100vh;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+}
+
+.content-1-text-1 {
+    font-family: var(--font-anton);
+    font-size: 130px;
+    font-weight: 400;
+    line-height: 110px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+
+.content-1-text-2 span {
+    font-family: "gambetta", serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 30px;
+    line-height: 30px;
+    color: #0E101199;
+
+}
+
+.content-1-text-2 p {
+    font-family: var(--font-inter);
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: -0.5px;
+    padding-top: 32px;
+    /* padding-bottom: 64px; */
+}
+
+.hero-text-content-2 {
+    height: 100vh;
+    /* padding-top: 30px; */
+
+}
+
+.content-2-text-1-about-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+
+.content-2-text-1-about-us span {
+    font-family: "gambetta", serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 30px;
+    line-height: 30px;
+    color: #0E101199;
+
+}
+
+.content-2-text-1-about-us h2 {
+    font-family: var(--font-anton);
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 400;
+    padding-top: 32px;
+}
+
+.content-2-text-1-about-us p {
+    font-family: var(--font-inter);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    padding-top: 16px;
+}
+
+.content-2-text-2-wrapper {
+    padding-top: 20px;
+
+}
+
+.content-2-text-2-wrapper p {
+    font-family: "gambetta", serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 30px;
+    line-height: 30px;
+    color: #0E101199;
+}
+
+.partner-logo {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding-top: 30px;
+
+
+}
+
+.partner-logo img {
+    width: 75%;
+    height: 100%;
+    padding: auto;
+}
+
+
+
+.project-text-container {
+    background-color: #f8f8f8;
+    padding: 60px;
+
+}
+
+.project-top {
+    display: flex;
+    justify-content: space-between;
+    font-family: "gambetta", serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 20px;
+    line-height: 30px;
+    color: #0E101199;
+}
+
+.project-text-container h2 {
+    font-family: var(--font-anton);
+    font-size: 100px;
+    /* line-height: 40px; */
+    font-weight: 400;
+    padding-top: 32px;
+}
+
+.project-text-container h4 {
+    font-family: var(--font-inter);
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 50px;
+
+}
+
+.project-imagecard-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    height: auto;
+    width: auto;
+
+    overflow: hidden;
+}
+
+.imagecard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.imagecard-image {
+    height: 100%;
+    width: auto;
+    position: relative;
+}
+
+.imagecard-image img {
+    height: 100%;
+    width: 100%;
+}
+
+.description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--font-inter);
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 56px;
+    padding: 25px;
+    background-color: #f8f8f8;
+}
+
+.description span {
+    display: flex;
+    justify-content: space-between;
+    font-family: "gambetta", serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 20px;
+    line-height: 30px;
+    color: #0E101199;
+
+}
+
+.image-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: auto;
+    width: 0%;
+    transform: translate(-50%, -50%) scale(0.5);
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.imagecard-image:hover .image-logo {
+    opacity: 1;
+}
+
+.service-text-container {
+    padding: 60px;
+}
+
+.service-top {
+    display: flex;
+    justify-content: space-between;
+    font-family: "gambetta", serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 20px;
+    line-height: 30px;
+    color: #0E101199;
+}
+
+.service-text-container h2 {
+    font-family: var(--font-anton);
+    font-size: 100px;
+    /* line-height: 40px; */
+    font-weight: 400;
+    padding-top: 32px;
+}
+
+.service-text-container h4 {
+    font-family: var(--font-inter);
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.brand-strategy {
+    display: flex;
+    justify-content: space-between;
+}
+
+.brand-strategy-image {
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.brand-strategy-image img {
+    height: calc(100vh - 80px);
+}
+
+.brand-strategy-text-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 80px;
+    background-color: #f8f8f8;
+    width: 100%;
+}
+
+.brand-strategy-text-1 h2 {
+    font-family: var(--font-anton);
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 90px;
+}
+
+.brand-strategy-text-1 p {
+    font-family: var(--font-inter);
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 35px;
+    letter-spacing: -1px;
+    padding-top: 16px;
+}
+
+.brand-strategy-text-2 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+}
+
+.brand-strategy-text-2 span {
+    font-family: "gambetta", serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 20px;
+    line-height: 30px;
+    color: #0E101199;
+}
+
+.text-2-container {
+    padding-top: 32px;
+    font-family: var(--font-inter);
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 41px;
+    letter-spacing: -0.5px;
+}
+
+.brand-strategy-text-2 div {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+
+
+/* Website-design css */
+
+.website-design {
+    display: flex;
+    justify-content: space-between;
+}
+
+.website-design-text-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 80px;
+    width: 100%;
+}
+
+.website-design-text-1 h2 {
+    font-family: var(--font-anton);
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 90px;
+}
+
+.website-design-text-1 p {
+    font-family: var(--font-inter);
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 35px;
+    letter-spacing: -1px;
+    padding-top: 16px;
+}
+
+.website-design-text-2 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+}
+
+.website-design-text-2 span {
+    font-family: "gambetta", serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 20px;
+    line-height: 30px;
+    color: #0E101199;
+}
+
+.text-2-container {
+    padding-top: 32px;
+    font-family: var(--font-inter);
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 41px;
+    letter-spacing: -0.5px;
+}
+
+.website-design-text-2 div {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.website-design-image img {
+    height: 100vh;
+}
+
+
+/* ui-ux design css */
+.ui-ux-design {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ui-ux-design-text-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 80px;
+    width: 100%;
+    background-color: #f8f8f8;
+}
+
+.ui-ux-design-text-1 h2 {
+    font-family: var(--font-anton);
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 90px;
+}
+
+.ui-ux-design-text-1 p {
+    font-family: var(--font-inter);
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 35px;
+    letter-spacing: -1px;
+    padding-top: 16px;
+}
+
+.ui-ux-design-text-2 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+}
+
+.ui-ux-design-text-2 span {
+    font-family: "gambetta", serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 20px;
+    line-height: 30px;
+    color: #0E101199;
+}
+
+.text-2-container {
+    padding-top: 32px;
+    font-family: var(--font-inter);
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 41px;
+    letter-spacing: -0.5px;
+}
+
+.ui-ux-design-text-2 div {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.ui-ux-design-image img {
+    height: 100vh;
+}
+
+.testimonials-text-container {
+    padding: 60px;
+}
+
+.testimonials-top {
+    display: flex;
+    justify-content: space-between;
+    font-family: "gambetta", serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 20px;
+    line-height: 30px;
+    color: #0E101199;
+}
+
+.testimonials-text-container h2 {
+    font-family: var(--font-anton);
+    font-size: 100px;
+    font-weight: 400;
+    padding-top: 32px;
+}
+
+.testimonials-text-container h4 {
+    font-family: var(--font-inter);
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 50px;
+}
+.profile-card{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+   
+}
+.profile-cards{
+    display: grid;
+    grid-template-columns: auto auto auto;  
+}
+
+.profile-card:nth-child(even){
+    background-color: #F8F8F8;
+}
+
+.profile-card h4{
+    font-family: var(--font-inter);
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: 30px;
+    padding-top: 30px;
+}
+
+.profile-card p{
+    font-family: var(--font-inter);
+    font-weight: 400;
+    color: #0E1011;
+    opacity: 60%;
+    font-size: 20px;
+    padding-top: 16px;
+}
+
+.profile{
+    display: flex;
+    padding-top: 30px;
+}
+
+.profile-image img{
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+}
+.profile-name{
+    padding-left: 15px;
+    padding-top: 3px;
+}
+
+.profile-name h6{
+    font-family: var(--font-inter);
+    font-size: 26px;
+    line-height: 33px;
+    font-weight: 600;
+}
+
+.profile-name span{
+    font-family: "gambetta", serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 20px;
+    line-height: 30px;
+    color: #0E101199;
+}
+
+
+/* footer css */
+
+.footer{
+    background-color: #0E1011;
+    padding: 60px;
+    color: white;
+}
+
+.footer-logo-image img{
+    height: 100px;
+    width: 250px;
+    
+}
+
+.footer-bottom{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding-top: 100px;
+    
+}
+.footer-bottom span{
+    font-family: "gambetta", serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF99;
+}
+.footer-pages-list{
+    list-style-type: none;
+    padding-top: 32px;
+    font-family: var(--font-inter);
+    font-size: 26px;
+    line-height: 33px;
+    font-weight: 600;
+}
+
+.footer-pages-list li{
+    padding-bottom: 10px ;
+}
+
+.footer-bottom-bar{
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--font-inter);
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 600;
+    padding-top: 60px;
+}
